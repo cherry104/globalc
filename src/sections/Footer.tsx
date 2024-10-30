@@ -14,34 +14,28 @@ export const Footer = () => {
           </div>
           <nav className="flex flex-col lg:flex-row gap-5 lg:gap-7 lg:flex-1 lg:justify-center">
             <a
-              href="#"
+              href="/#"
               className="text-white/70 hover:text-white text-xs md:text-sm transition"
             >
-              Features
+              Home
             </a>
             <a
-              href="#"
+              href="/procedures"
               className="text-white/70 hover:text-white text-xs md:text-sm transition"
             >
-              Developers
+              Procedures
             </a>
             <a
-              href="#"
+              href="/journey"
               className="text-white/70 hover:text-white text-xs md:text-sm transition"
             >
-              Company
+              Journey
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-white/70 hover:text-white text-xs md:text-sm transition"
             >
-              Blog
-            </a>
-            <a
-              href="#"
-              className="text-white/70 hover:text-white text-xs md:text-sm transition"
-            >
-              Changelog
+              About Us
             </a>
           </nav>
           <div className="flex gap-5 lg:flex-1 lg:justify-end">

@@ -3,7 +3,7 @@ import {
   DotLottieCommonPlayer,
   DotLottiePlayer,
 } from "@dotlottie/react-player";
-import productImage from "@/assets/product-image.png";
+import stepsImage from "@/assets/steps.png";
 import Image from "next/image";
 import { ComponentPropsWithoutRef, useEffect, useRef, useState } from "react";
 import {
@@ -17,27 +17,43 @@ import { motion } from "framer-motion";
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
-    title: "End-to-End Care",
-    isNew: true,
-    backgroundPositionX: 0,
-    backgroundPositionY: 0,
-    backgroundSizeX: 150,
+    title: "Step 5",
+    isNew: false,
+    backgroundPositionX: 50,
+    backgroundPositionY: 100,
+    backgroundSizeX: 200,
   },
   {
     icon: "/assets/lottie/click.lottie",
-    title: "Top Hospitals",
+    title: "Step 4",
     isNew: false,
-    backgroundPositionX: 98,
-    backgroundPositionY: 100,
-    backgroundSizeX: 135,
+    backgroundPositionX: 100,
+    backgroundPositionY: 50,
+    backgroundSizeX: 200,
   },
   {
     icon: "/assets/lottie/stars.lottie",
-    title: "Affordability",
+    title: "Step 3",
+    isNew: false,
+    backgroundPositionX: 0,
+    backgroundPositionY: 50,
+    backgroundSizeX: 200,
+  },
+  {
+    icon: "/assets/lottie/stars.lottie",
+    title: "Step 2",
     isNew: false,
     backgroundPositionX: 100,
-    backgroundPositionY: 27,
-    backgroundSizeX: 177,
+    backgroundPositionY: 0,
+    backgroundSizeX: 200,
+  },
+  {
+    icon: "/assets/lottie/stars.lottie",
+    title: "Step 1",
+    isNew: false,
+    backgroundPositionX: 0,
+    backgroundPositionY: 0,
+    backgroundSizeX: 200,
   },
 ];
 const FeatureTab = (
@@ -114,7 +130,7 @@ const FeatureTab = (
   );
 };
 
-export const Features = () => {
+export const PatientJourney = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const backgroundPositionX = useMotionValue(tabs[0].backgroundPositionX);
   const backgroundPositionY = useMotionValue(tabs[0].backgroundPositionY);
@@ -147,11 +163,10 @@ export const Features = () => {
     <section className="py-20 md:py-24">
       <div className="container">
         <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">
-          Why Choose GlobalCure?
+          Your Healthcare Journey with GlobalCure
         </h2>
         <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tight text-center mt-5">
-          We provide top-class medical services to our patients by continuous
-          imporovement of our technology.
+          We make your healthcare journey smooth and stress-free.
         </p>
         <div className="mt-10 flex flex-col lg:flex-row-reverse gap-3">
           {tabs.map((tab, tabIndex) => (
@@ -169,7 +184,7 @@ export const Features = () => {
             style={{
               backgroundPosition,
               backgroundSize,
-              backgroundImage: `url(${productImage.src})`,
+              backgroundImage: `url(${stepsImage.src})`,
             }}
           ></motion.div>
         </div>

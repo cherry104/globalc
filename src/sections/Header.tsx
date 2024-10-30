@@ -16,17 +16,29 @@ export const Header = () => {
           </div>
           <div className="hidden md:block">
             <nav className="flex gap-8 text-sm ">
-              <a href="#" className="text-white/70 hover:text-white transition">
-                Features
+              <a
+                href="/#"
+                className="text-white/70 hover:text-white transition"
+              >
+                Home
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition">
-                Developers
+              <a
+                href="/procedures"
+                className="text-white/70 hover:text-white transition"
+              >
+                Medical Procedures
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition">
-                Pricing
+              <a
+                href="/journey"
+                className="text-white/70 hover:text-white transition"
+              >
+                Patient Journey
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition">
-                Changelog
+              <a
+                href="/about"
+                className="text-white/70 hover:text-white transition"
+              >
+                About Us
               </a>
             </nav>
           </div>

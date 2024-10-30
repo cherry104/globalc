@@ -3,7 +3,7 @@ import {
   DotLottieCommonPlayer,
   DotLottiePlayer,
 } from "@dotlottie/react-player";
-import productImage from "@/assets/product-image.png";
+import proceduresImage from "@/assets/procedures.png";
 import Image from "next/image";
 import { ComponentPropsWithoutRef, useEffect, useRef, useState } from "react";
 import {
@@ -17,27 +17,19 @@ import { motion } from "framer-motion";
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
-    title: "End-to-End Care",
-    isNew: true,
-    backgroundPositionX: 0,
-    backgroundPositionY: 0,
-    backgroundSizeX: 150,
+    title: "Our Mission",
+    isNew: false,
+    backgroundPositionX: 100,
+    backgroundPositionY: 50,
+    backgroundSizeX: 200,
   },
   {
     icon: "/assets/lottie/click.lottie",
-    title: "Top Hospitals",
-    isNew: false,
-    backgroundPositionX: 98,
-    backgroundPositionY: 100,
-    backgroundSizeX: 135,
-  },
-  {
-    icon: "/assets/lottie/stars.lottie",
-    title: "Affordability",
+    title: "Why Choose Us",
     isNew: false,
     backgroundPositionX: 100,
-    backgroundPositionY: 27,
-    backgroundSizeX: 177,
+    backgroundPositionY: 100,
+    backgroundSizeX: 200,
   },
 ];
 const FeatureTab = (
@@ -114,7 +106,7 @@ const FeatureTab = (
   );
 };
 
-export const Features = () => {
+export const AboutFeatures = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const backgroundPositionX = useMotionValue(tabs[0].backgroundPositionX);
   const backgroundPositionY = useMotionValue(tabs[0].backgroundPositionY);
@@ -147,11 +139,12 @@ export const Features = () => {
     <section className="py-20 md:py-24">
       <div className="container">
         <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">
-          Why Choose GlobalCure?
+          About GlobalCure
         </h2>
         <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tight text-center mt-5">
-          We provide top-class medical services to our patients by continuous
-          imporovement of our technology.
+          At GlobalCure, we are dedicated to providing affordable, world-class
+          medical care to patients around the globe. From consultation to
+          post-treatment, we handle every detail of your healthcare journey.
         </p>
         <div className="mt-10 flex flex-col lg:flex-row-reverse gap-3">
           {tabs.map((tab, tabIndex) => (
@@ -169,7 +162,7 @@ export const Features = () => {
             style={{
               backgroundPosition,
               backgroundSize,
-              backgroundImage: `url(${productImage.src})`,
+              backgroundImage: `url(${proceduresImage.src})`,
             }}
           ></motion.div>
         </div>

@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Startup Landing Page",
-  description: "A landing page for an AI startup created with Frontend Tribe",
+  title: "GlobalCure",
+  description: "Bridging Health Globally",
 };
 
 export default function RootLayout({
