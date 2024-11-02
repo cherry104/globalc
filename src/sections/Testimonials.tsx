@@ -8,27 +8,51 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "The hospital in India was outstanding, and the personalized care made me feel like I was in good hands from start to finish.”",
-    name: "Sarah Thompson",
-    title: "43 (UK) - Hip Replacement",
+    text: "“I was nervous about traveling abroad for surgery, but GlobalCure made the entire experience seamless.”",
+    name: "John Smith",
+    title: "58 (USA) - Knee Replacement",
     avatarImg: avatar1,
   },
   {
-    text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
-    name: "Jamie Lee",
-    title: "Founder @ Pulse",
-    avatarImg: avatar2,
-  },
-  {
-    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
-    name: "Alisa Hester",
-    title: "Product @ Innovate",
+    text: "“GlobalCure exceeded my expectations in every way.”",
+    name: "Sarah Thompson",
+    title: "43 (UK) - Hip Replacement",
     avatarImg: avatar3,
   },
   {
-    text: "“Our team's productivity has increased significantly since we started using this tool”",
-    name: "Alec Whitten",
-    title: "CTO @ Tech Solutions",
+    text: "“I was impressed by the professionalism and efficiency of GlobalCure.”",
+    name: "Mohammed Al-Bakri",
+    title: "61 (UAE) - Cataract Surgery",
+    avatarImg: avatar2,
+  },
+  {
+    text: "“I found GlobalCure when I was searching for an affordable option for heart surgery.”",
+    name: "Karen Douglas",
+    title: "52 (USA) - Heart Bypass",
+    avatarImg: avatar3,
+  },
+  {
+    text: "“I never thought I'd travel for surgery, but GlobalCure made it an easy choice.”",
+    name: "Robert Wilson",
+    title: "66 (UK) - Knee Replacement",
+    avatarImg: avatar2,
+  },
+  {
+    text: "“The team at GlobalCure provided exceptional service throughout my journey.”",
+    name: "Nadia Hassan",
+    title: "39 (Saudi Arabia) - Cosmetic Surgery",
+    avatarImg: avatar4,
+  },
+  {
+    text: "“From the consultation to recovery, GlobalCure took care of every detail.”",
+    name: "Thomas Murphy",
+    title: "55 (Australia) - Hip Replacement",
+    avatarImg: avatar3,
+  },
+  {
+    text: "“The level of care I received in India through GlobalCure was extraordinary.”",
+    name: "David Stewart",
+    title: "62 (UK) - Heart Bypass",
     avatarImg: avatar4,
   },
 ];
