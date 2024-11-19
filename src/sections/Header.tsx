@@ -43,7 +43,9 @@ export const Header = () => {
             </nav>
           </div>
           <div className="flex gap-4 items-center">
-            <Button>Contact Us</Button>
+            <a href="https://tally.so/r/3l07Bv">
+              <Button>Contact Us</Button>
+            </a>
             <MenuIcon className="md:hidden" />
           </div>
         </div>

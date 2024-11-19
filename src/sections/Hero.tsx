@@ -113,7 +113,9 @@ export const Hero = () => {
           care from consultation to recovery.
         </p>
         <div className="flex justify-center mt-5">
-          <Button>Contact Us</Button>
+          <a href="https://tally.so/r/3l07Bv">
+            <Button>Contact Us</Button>
+          </a>
         </div>
       </div>
     </motion.section>

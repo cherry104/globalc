@@ -89,7 +89,9 @@ export const CallToAction = () => {
               Affordable, high-quality medical treatments in India.
             </p>
             <div className="flex justify-center mt-8">
-              <Button>Contact Us</Button>
+              <a href="https://tally.so/r/3l07Bv">
+                <Button>Contact Us</Button>
+              </a>
             </div>
           </div>
         </motion.div>

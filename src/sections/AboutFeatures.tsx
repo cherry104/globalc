@@ -146,26 +146,6 @@ export const AboutFeatures = () => {
           medical care to patients around the globe. From consultation to
           post-treatment, we handle every detail of your healthcare journey.
         </p>
-        <div className="mt-10 flex flex-col lg:flex-row-reverse gap-3">
-          {tabs.map((tab, tabIndex) => (
-            <FeatureTab
-              {...tab}
-              selected={selectedTab === tabIndex}
-              onClick={() => handelSelectTab(tabIndex)}
-              key={tab.title}
-            />
-          ))}
-        </div>
-        <div className="border border-white/20 p-2.5 rounded-xl mt-3">
-          <motion.div
-            className="aspect-video bg-cover border border-white/20 rounded-lg"
-            style={{
-              backgroundPosition,
-              backgroundSize,
-              backgroundImage: `url(${proceduresImage.src})`,
-            }}
-          ></motion.div>
-        </div>
       </div>
     </section>
   );
